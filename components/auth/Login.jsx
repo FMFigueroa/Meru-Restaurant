@@ -82,9 +82,9 @@ const Login = () => {
                     <Link href="/">
                         <a>
                             <Image
-                                src="/assets/img/logo_team.png"
-                                width={240}
-                                height={150}
+                                src="/assets/img/logo.png"
+                                width={300}
+                                height={300}
                                 alt="Logo brand"
                             /></a>
                     </Link>
@@ -127,7 +127,7 @@ const Login = () => {
                                 <label className={styles.form__label}>Correo electrónico</label>
                                 <span className={styles.form__line}></span>
                                 <span className={styles.form__icon_l}>
-                                    <MailIcon style={{ width: "20px", color: "#7a7a8d" }} />
+                                    <MailIcon style={{ width: "20px", color: "#663300" }} />
                                 </span>
 
                                 {errors.email && (
@@ -167,16 +167,16 @@ const Login = () => {
                                 <label className={styles.form__label}>Contraseña</label>
                                 <span className={styles.form__line}></span>
                                 <span className={styles.form__icon_l}>
-                                    <LockClosedIcon style={{ width: "20px", color: "#7a7a8d" }} />
+                                    <LockClosedIcon style={{ width: "20px", color: "#663300" }} />
                                 </span>
                                 <button
                                     className={styles.form__icon_r}
                                     onClick={handleChangeViewPassword}
                                 >
                                     {viewPassword === "password" ? (
-                                        <EyeIcon style={{ width: "18px", color: "#B7B3BC" }} />
+                                        <EyeIcon style={{ width: "18px", color: "#663300" }} />
                                     ) : (
-                                        <EyeOffIcon style={{ width: "18px", color: "#B7B3BC" }} />
+                                        <EyeOffIcon style={{ width: "18px", color: "#663300" }} />
                                     )}
                                 </button>
                                 <span className={styles.form__error}>

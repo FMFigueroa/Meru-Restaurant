@@ -128,8 +128,7 @@ const Navbar = () => {
             <nav className="nav">
                 <Link href="/">
                     <a className="nav__logo">
-                        <i className="ri-bubble-chart-fill nav__logo-icon"></i> Felix
-                        Figueroa
+                        <i className="ri-leaf-fill nav__logo-icon"></i>Merú Restaurant
                     </a>
                 </Link>
                 <div className="nav__menu" id="nav-menu">

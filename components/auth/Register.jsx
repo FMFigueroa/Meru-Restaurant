@@ -84,9 +84,9 @@ const Register = () => {
                 <Link href="/">
                     <a>
                         <Image
-                            src="/assets/img/logo_team.png"
-                            width={240}
-                            height={140}
+                            src="/assets/img/logo.png"
+                            width={300}
+                            height={300}
                             alt="Logo brand"
                         /></a>
                 </Link>
@@ -107,7 +107,7 @@ const Register = () => {
                             <input
                                 className={styles.form__input}
                                 placeholder=" "
-                                autoComplete="on"
+                                autoComplete="off"
                                 type="text"
                                 name="first_name"
                                 {...register("first_name", {
@@ -133,7 +133,7 @@ const Register = () => {
                             <label className={styles.form__label}>Nombres</label>
                             <span className={styles.form__line}></span>
                             <span className={styles.form__icon_l}>
-                                <UserIcon style={{ width: "20px", color: "#837A8D" }} />
+                                <UserIcon style={{ width: "20px", color: "#663300" }} />
                             </span>
 
                             {errors.first_name && (
@@ -147,7 +147,7 @@ const Register = () => {
                             <input
                                 className={styles.form__input}
                                 placeholder=" "
-                                autoComplete="on"
+                                autoComplete="off"
                                 type="text"
                                 name="last_name"
                                 {...register("last_name", {
@@ -172,7 +172,7 @@ const Register = () => {
                             <label className={styles.form__label}>Apellidos</label>
                             <span className={styles.form__line}></span>
                             <span className={styles.form__icon_l}>
-                                <UserIcon style={{ width: "20px", color: "#837A8D" }} />
+                                <UserIcon style={{ width: "20px", color: "#663300" }} />
                             </span>
 
                             {errors.last_name && (
@@ -186,7 +186,7 @@ const Register = () => {
                             <input
                                 className={styles.form__input}
                                 placeholder=" "
-                                autoComplete="on"
+                                autoComplete="off"
                                 type="email"
                                 name="email"
                                 {...register("email", {
@@ -207,7 +207,7 @@ const Register = () => {
                             <label className={styles.form__label}>Correo electrónico</label>
                             <span className={styles.form__line}></span>
                             <span className={styles.form__icon_l}>
-                                <MailIcon style={{ width: "20px", color: "#837A8D" }} />
+                                <MailIcon style={{ width: "20px", color: "#663300" }} />
                             </span>
 
                             {errors.email && (
@@ -220,7 +220,7 @@ const Register = () => {
                         <div className={styles.form__group}>
                             <input
                                 placeholder=" "
-                                autoComplete="on"
+                                autoComplete="off"
                                 type={viewPassword}
                                 name="password"
                                 {...register("password", {
@@ -245,16 +245,16 @@ const Register = () => {
                             <label className={styles.form__label}>Contraseña</label>
                             <span className={styles.form__line}></span>
                             <span className={styles.form__icon_l}>
-                                <LockClosedIcon style={{ width: "20px", color: "#837A8D" }} />
+                                <LockClosedIcon style={{ width: "20px", color: "#663300" }} />
                             </span>
                             <button
                                 className={styles.form__icon_r}
                                 onClick={handleChangeViewPassword}
                             >
                                 {viewPassword === "password" ? (
-                                    <EyeIcon style={{ width: "18px", color: "#B7B3BC" }} />
+                                    <EyeIcon style={{ width: "18px", color: "#663300" }} />
                                 ) : (
-                                    <EyeOffIcon style={{ width: "18px", color: "#B7B3BC" }} />
+                                    <EyeOffIcon style={{ width: "18px", color: "#663300" }} />
                                 )}
                             </button>
                             <span className={styles.form__error}>
@@ -307,7 +307,7 @@ const Register = () => {
                 </div>
             </form>
             <div className="d-flex flex-row justify-content-center align-items-center">
-                <p className="pt-3" style={{ color: "#707070" }}>
+                <p className="pt-3" style={{ color: "#8b4513" }}>
                     ¿Ya tienes una cuenta?
                     <Link href="/login">
                         <a className={styles.link}>Inicia aquí</a>

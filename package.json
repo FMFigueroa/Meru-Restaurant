@@ -1,5 +1,5 @@
 {
-  "name": "superheroes",
+  "name": "meru",
   "private": true,
   "scripts": {
     "dev": "next dev",

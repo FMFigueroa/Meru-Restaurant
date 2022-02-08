@@ -6,7 +6,7 @@
 
 .form__title {
   font-weight: bold;
-  color: #0070f3;
+  color: #663300;
   text-align: center;
   font-size: 2.2rem;
   font-family: "Nunito";
@@ -24,7 +24,7 @@
   width: 95%;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0px 0px 8px 1px rgba(1, 1, 32, 0.3);
+  box-shadow: 0px 0px 8px 1px rgba(87, 36, 2, 0.3);
 }
 .form {
   padding: 2rem 1.5rem 3rem 1.5rem;
@@ -33,12 +33,12 @@
 }
 .form__group {
   position: relative;
-  --color: #5757577e;
+  --color: rgb(102, 51, 0);
 }
 .form__input {
   width: 100%;
   background: none;
-  --color2: #706c6c;
+  --color2: #994d00;
   font-size: 1rem;
   padding: 0.6rem 2rem;
   border: none;
@@ -85,7 +85,7 @@
 /* === Animation label and placeholder with focus Input valid === */
 
 .form__input:not(:placeholder-shown) {
-  --color3: #4d4646;
+  --color3: #cc6600;
 }
 .form__input:focus + .form__label,
 .form__input:not(:placeholder-shown) + .form__label {
@@ -124,7 +124,7 @@
 
 /* ================================== */
 .form__label {
-  color: #7a7a8d;
+  color: var(--color3);
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -136,7 +136,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--color2);
   font-size: 1.5rem;
   cursor: pointer;
   transform: translateY(1px);
@@ -147,7 +146,6 @@
   right: 0rem;
   background: none;
   border: none;
-  color: var(--color3);
   font-size: 1.5rem;
   cursor: pointer;
   transform: translateY(1px);
@@ -163,8 +161,8 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #0070f3;
-  box-shadow: 0px 0px 8px 1.5px rgba(1, 1, 32, 0.3);
+  background-color: #006600;
+  box-shadow: 0px 0px 8px 1.5px rgba(7, 29, 12, 0.3);
   transform: scale(0);
   transform: left bottom;
   transition: transform 0.4s;
@@ -232,12 +230,12 @@
 .avatar__label {
   padding-left: 1rem;
   font-size: 0.7rem;
-  color: #7a7a8d;
+  color: #8b4513;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .avatar__input {
   width: 100%;
-  background-color: #cfcfd4;
+  background-color: rgb(196, 163, 126);
   color: #fff;
   border-radius: 3px;
   padding: 0.5rem;
@@ -258,7 +256,7 @@
 /*============== Button submit ===============*/
 .form__submit {
   width: 95%;
-  background-color: #0070f3;
+  background-color: #006600;
   color: #fff;
   border-radius: 8px;
   padding: 0.5rem;

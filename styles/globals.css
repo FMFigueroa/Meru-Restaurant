@@ -7,9 +7,9 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 220;
+  --hue: 120;
   --hue2: 30;
-  --first-color: hsl(var(--hue), 100%, 50%);
+  --first-color: hsl(var(--hue), 100%, 20%);
   --first-color-alt: hsl(var(--hue2), 80%, 50%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
@@ -368,7 +368,7 @@ the website, in dark theme
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 
 /* Show menu */
@@ -387,6 +387,9 @@ the website, in dark theme
   font-size: var(--normal-font-size);
   position: relative;
   color: var(--first-color);
+}
+.active-link:hover {
+  color: var(--first-color-alt);
 }
 
 .active-link::after {
@@ -527,6 +530,7 @@ the website, in dark theme
 .footer__social-link:hover,
 .footer__country-link:hover,
 .footer__contact-link:hover {
+  color: var(--first-color-alt);
   transform: translateY(-0.25rem);
 }
 
